@@ -7,6 +7,7 @@ import java.util.regex.*;
 
 /**
  * Not an optimized solution as complexity is O(N^2).Use trie to optimize it.
+ * https://www.toptal.com/java/the-trie-a-neglected-data-structure
  * Also for this programming problem,encapsulation is not adhered.
  * 
  * */
