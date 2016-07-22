@@ -7,6 +7,7 @@ import java.util.regex.*;
 
 /**
  * For this programming problem,encapsulation is not adhered.
+ * String split is better than StringTokenizer and BufferedReader is better than Scanner.
  * 
  * */
  
@@ -78,7 +79,7 @@ class TravelProfiles {
           
     }
 
-	static class Hotel implements Comparable<Hotel>{
+    private static class Hotel implements Comparable<Hotel>{
         public int id;
         public int price;
         public Set<String> facs= new HashSet<>();
