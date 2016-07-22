@@ -5,7 +5,7 @@ import java.math.*;
 import java.util.regex.*;
 
 /**
- * An efficient solution without memory optimization
+ * An efficient solution without memory optimization.Also for this programming problem,encapsulation is not adhered.
  * 
  * */
 
