@@ -4,6 +4,11 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+/**
+ * An efficient solution without memory optimization
+ * 
+ * */
+
 class SimilarDestinations {
     
     static Map<String,Integer> tagMap = new HashMap<String,Integer>();
