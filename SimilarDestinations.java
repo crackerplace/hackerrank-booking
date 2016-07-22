@@ -11,10 +11,10 @@ import java.util.regex.*;
 
 class SimilarDestinations {
     
-    static Map<String,Integer> tagMap = new HashMap<String,Integer>();
-    static Map<BitSet,Group> patterns = new HashMap<BitSet,Group>();
-    static Set<String> tagSet = new HashSet<>();
-    static Map<Integer,String> tagMapIndex = new HashMap<Integer,String>();
+    private static Map<String,Integer> tagMap = new HashMap<String,Integer>();
+    private static Map<BitSet,Group> patterns = new HashMap<BitSet,Group>();
+    private static Set<String> tagSet = new HashSet<>();
+    private static Map<Integer,String> tagMapIndex = new HashMap<Integer,String>();
     
     public static void main(String[] args) {
     	try {
@@ -82,9 +82,9 @@ class SimilarDestinations {
         }
         
     	}catch(Exception ex){
-    		StringWriter errors = new StringWriter();
-			ex.printStackTrace(new PrintWriter(errors));
-			System.out.println(errors);	
+	    	StringWriter errors = new StringWriter();
+		ex.printStackTrace(new PrintWriter(errors));
+		System.out.println(errors);	
     	}
     }
     
@@ -95,7 +95,7 @@ class SimilarDestinations {
     }
     
     
-    static class Location implements Comparable<Location>{
+    private static class Location implements Comparable<Location>{
         public String name;
         public List<String> tags = new ArrayList<>();
         public BitSet tagBits = new BitSet(200);
